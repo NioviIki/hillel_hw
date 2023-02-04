@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'random_name.apps.RandomNameConfig',
+    'catalog.apps.CatalogConfig',
 ]
 
 MIDDLEWARE = [
