@@ -11,9 +11,8 @@ class UserModelTests(TestCase):
 
         test_create = Command()
         test_create.handle(user_create=5)
-        check =  User.objects.count() > 0
 
-        self.assertIs(check, True)
+        self.assertIs(User.objects.exists(), True)
 
 
 
