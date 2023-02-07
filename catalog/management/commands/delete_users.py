@@ -9,5 +9,6 @@ class Command(BaseCommand):
                             help="Creates a random user with username, email, password.")
 
     def handle(self, *args, **options):
-
-        User.objects.filter(pk__in=options['user_delete']).delete()
+        x = User.objects.filter(pk__in=options['user_delete'])
+        if not x.filter(is_superuser=True).exists():
+            x.delete()
