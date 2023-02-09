@@ -16,4 +16,5 @@ class Command(BaseCommand):
         for i in range(options["user_create"]):
             User.objects.bulk_create([User(username=fake.unique.user_name(),
                                            email=fake.unique.email(),
-                                           password=fake.unique.password())])
+                                           password=fake.unique.password())]
+                                     )
