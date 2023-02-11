@@ -13,12 +13,12 @@ class Product(models.Model):
         return self.product
 
 
-class Vendor(models.Model):
+class Retailer(models.Model):
     company = models.CharField(max_length=30)
-    vendor = models.OneToOneField(City, on_delete=models.CASCADE)
+    city = models.OneToOneField(City, on_delete=models.CASCADE)
 
     def __str__(self):
-        return f'{self.company} to {self.vendor}'
+        return f'{self.company} to {self.city}'
 class Client(models.Model):
     product = models.ManyToManyField(Product)
     key = models.ForeignKey(City, on_delete=models.CASCADE)
