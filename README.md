@@ -1,22 +1,50 @@
-Инициализоровать новый django проект с последней версией django:
+In [1]: client = Client.objects.get(pk=1)
+SELECT "catalog_client"."id",
+       "catalog_client"."key_id"
+  FROM "catalog_client"
+ WHERE "catalog_client"."id" = 1
+ LIMIT 21
 
-зайти в папку репозитория
+Execution time: 0.001385s [Database: default]
 
-django-admin startproject <project_name> .
+In [2]: client.key
+SELECT "catalog_city"."id",
+       "catalog_city"."city"
+  FROM "catalog_city"
+ WHERE "catalog_city"."id" = 1
+ LIMIT 21
 
-(точка в конце - путь куда положить файлы проекта, в данном случае - текущая папка)
+Execution time: 0.000204s [Database: default]
+Out[2]: <City: Dnipro>
 
+In [3]: client.product.all()
+Out[3]: SELECT "catalog_product"."id",
+       "catalog_product"."product"
+  FROM "catalog_product"
+ INNER JOIN "catalog_client_product"
+    ON ("catalog_product"."id" = "catalog_client_product"."product_id")
+ WHERE "catalog_client_product"."client_id" = 1
+ LIMIT 21
 
-В .gitignore не забыть добавить (удостовериться в наличии) файл базы данных, папку виртульаного окружения (если она в папке проекта) и папку настроект среды разработки
+Execution time: 0.000217s [Database: default]
+<QuerySet [<Product: Knife>]>
 
+In [4]: retailer = Retailer.objects.get(pk=1)
+SELECT "catalog_retailer"."id",
+       "catalog_retailer"."company",
+       "catalog_retailer"."city_id"
+  FROM "catalog_retailer"
+ WHERE "catalog_retailer"."id" = 1
+ LIMIT 21
 
-Создать requirements.txt (или Pipfile + Pipfile.lock в зависимости от используемого)
+Execution time: 0.000325s [Database: default]
 
+In [5]: retailer.city
+SELECT "catalog_city"."id",
+       "catalog_city"."city"
+  FROM "catalog_city"
+ WHERE "catalog_city"."id" = 1
+ LIMIT 21
 
-Создать django приложение catalog (python manage.py startapp <app_name>) и добавить его в INSTALLED_APPS
-
-
-Убедиться что SECRET_KEY будет взят из переменных окружения и НЕ будет храниться в репозитории (os.environ.get("SECRET_KEY", "<def value>"))
-
-
-README.md - описать проект
+Execution time: 0.000245s [Database: default]
+Out[5]: <City: Dnipro>
