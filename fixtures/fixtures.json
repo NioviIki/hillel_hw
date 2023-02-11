@@ -216,6 +216,186 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 7,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 7,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 7,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 7,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add vendor",
+    "content_type": 8,
+    "codename": "add_vendor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change vendor",
+    "content_type": 8,
+    "codename": "change_vendor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete vendor",
+    "content_type": 8,
+    "codename": "delete_vendor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view vendor",
+    "content_type": 8,
+    "codename": "view_vendor"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add client",
+    "content_type": 9,
+    "codename": "add_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change client",
+    "content_type": 9,
+    "codename": "change_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete client",
+    "content_type": 9,
+    "codename": "delete_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view client",
+    "content_type": 9,
+    "codename": "view_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add city",
+    "content_type": 10,
+    "codename": "add_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change city",
+    "content_type": 10,
+    "codename": "change_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete city",
+    "content_type": 10,
+    "codename": "delete_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view city",
+    "content_type": 10,
+    "codename": "view_city"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add retailer",
+    "content_type": 11,
+    "codename": "add_retailer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change retailer",
+    "content_type": 11,
+    "codename": "change_retailer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete retailer",
+    "content_type": 11,
+    "codename": "delete_retailer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view retailer",
+    "content_type": 11,
+    "codename": "view_retailer"
+  }
+},
+{
   "model": "contenttypes.contenttype",
   "pk": 1,
   "fields": {
@@ -261,6 +441,174 @@
   "fields": {
     "app_label": "sessions",
     "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "catalog",
+    "model": "product"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "catalog",
+    "model": "vendor"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "catalog",
+    "model": "client"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "catalog",
+    "model": "city"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "catalog",
+    "model": "retailer"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 1,
+  "fields": {
+    "city": "Dnipro"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 2,
+  "fields": {
+    "city": "Lviv"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 3,
+  "fields": {
+    "city": "Donetsk"
+  }
+},
+{
+  "model": "catalog.city",
+  "pk": 4,
+  "fields": {
+    "city": "Zaporizha"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 1,
+  "fields": {
+    "product": "Knife"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 2,
+  "fields": {
+    "product": "Doors"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 3,
+  "fields": {
+    "product": "Beds"
+  }
+},
+{
+  "model": "catalog.product",
+  "pk": 4,
+  "fields": {
+    "product": "Chairs"
+  }
+},
+{
+  "model": "catalog.retailer",
+  "pk": 1,
+  "fields": {
+    "company": "First_company",
+    "city": 1
+  }
+},
+{
+  "model": "catalog.retailer",
+  "pk": 2,
+  "fields": {
+    "company": "Second_company",
+    "city": 2
+  }
+},
+{
+  "model": "catalog.retailer",
+  "pk": 3,
+  "fields": {
+    "company": "Random_company",
+    "city": 3
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 1,
+  "fields": {
+    "key": 1,
+    "product": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 2,
+  "fields": {
+    "key": 1,
+    "product": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 3,
+  "fields": {
+    "key": 2,
+    "product": [
+      1
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 4,
+  "fields": {
+    "key": 4,
+    "product": [
+      2
+    ]
+  }
+},
+{
+  "model": "catalog.client",
+  "pk": 5,
+  "fields": {
+    "key": 3,
+    "product": []
   }
 }
 ]
