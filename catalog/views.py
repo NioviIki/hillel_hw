@@ -2,19 +2,13 @@ from django.shortcuts import render
 from math import sqrt
 from .forms import TestikForm
 
-def TestikView(request):
+def TriangleView(request):
 
     gip = None
-    fvalue = TestikForm(request.POST)
-    svalue =  TestikForm(request.POST)
-    fnumber, snumber = request.GET.getlist('fvalue'), request.GET.getlist('svalue')
+    q_form = TestikForm(request.POST)
+    list_of_side = request.GET.getlist('q_form')
 
-    if fnumber and snumber:
-        gip = int(sqrt(int(fnumber[0]) ** 2 + int(snumber[0]) ** 2))
+    if list_of_side:
+        gip = int(sqrt(int(list_of_side[0]) ** 2 + int(list_of_side[1]) ** 2))
 
-    return render(request, 'catalog/test.html', {"fnumber": fnumber,
-                                                 "snumber": snumber,
-                                                 'gip': gip,
-                                                 "fvalue": fvalue,
-                                                 'svalue': svalue,
-                                                 })
+    return render(request, 'catalog/Triangle.html', {'gip': gip, "q_form": q_form, })

@@ -4,5 +4,5 @@ from . import views
 app_name = 'polls'
 
 urlpatterns = [
-    path('', views.TestikView, name='testik')
+    path('triangle/', views.TriangleView, name='triangle')
 ]
