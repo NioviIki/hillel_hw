@@ -17,5 +17,4 @@ def TestikView(request):
                                                  'gip': gip,
                                                  "fvalue": fvalue,
                                                  'svalue': svalue,
-                                                 "testik": testik
                                                  })
