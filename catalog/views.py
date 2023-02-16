@@ -1,14 +1,19 @@
-from django.shortcuts import render
 from math import sqrt
-from .forms import TestikForm
+
+from django.shortcuts import render
+
+from .forms import Side_of_triangleForm
+
 
 def TriangleView(request):
 
-    gip = None
-    q_form = TestikForm()
+    hip = None
+    x = Side_of_triangleForm(request.GET)
 
-    if TestikForm(request.GET).is_valid():
-        x = list(request.GET.dict().values())
-        gip = int(sqrt(int(x[0]) ** 2 + int(x[1]) ** 2))
+    if x.is_valid():
+        cathetuses_of_triangle = list(request.GET.dict().values())
+        hip = int(sqrt(int(cathetuses_of_triangle[0]) ** 2 +
+                       int(cathetuses_of_triangle[1]) ** 2))
 
-    return render(request, 'catalog/Triangle.html', {'gip': gip, "q_form": q_form})
+    return render(request, 'catalog/Triangle.html',
+                  {'hip': hip, "q_form": Side_of_triangleForm(), "x": x})

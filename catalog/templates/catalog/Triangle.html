@@ -2,12 +2,13 @@
 <html lang="en">
 
 <form>
-    {% if gip %}
-    <p>Gipotenuza = {{ gip }}</p>
+    {% if hip %}
+
+    <p>{{ x.as_table }} = Hypotenuse: {{ hip }}</p>
 
     {% else %}
 
-    {{ q_form.as_p }}
+    {{ q_form.as_table }}
     <input type="submit" value="accept">
 
 {% endif %}

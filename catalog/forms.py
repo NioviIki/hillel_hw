@@ -1,5 +1,6 @@
 from django import forms
 
-class TestikForm(forms.Form):
-    fvalue = forms.IntegerField(label="First number", max_value=100)
-    svalue = forms.IntegerField(label="Second number", max_value=100)
+
+class Side_of_triangleForm(forms.Form):
+    fvalue = forms.IntegerField(label="First cathetuse", max_value=100, min_value=1)
+    svalue = forms.IntegerField(label="Second cathetuse", max_value=100, min_value=1)
