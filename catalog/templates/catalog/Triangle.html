@@ -2,15 +2,12 @@
 <html lang="en">
 
 <form>
-{% if gip %}
+    {% if gip %}
     <p>Gipotenuza = {{ gip }}</p>
 
     {% else %}
 
-    <label for="fvalue"> First number </label><br>
-    <input type="number" id="fvalue" name="q_form"><br>
-    <label for="svalue"> Second number </label><br>
-    <input type="number" id="svalue" name="q_form"><br>
+    {{ q_form.as_p }}
     <input type="submit" value="accept">
 
 {% endif %}
