@@ -4,11 +4,12 @@
 <form>
     {% if hip %}
 
-    <p>{{ x.as_table }} = Hypotenuse: {{ hip }}</p>
+    <p>{{ form.as_table }} = Hypotenuse: {{ hip }}</p>
 
     {% else %}
 
     {{ q_form.as_table }}
+
     <input type="submit" value="accept">
 
 {% endif %}
