@@ -29,3 +29,8 @@ class Client(models.Model):
 
     def __str__(self):
         return f'Client {self.key_id} from {self.key} buy {list(self.product.all())}'
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
