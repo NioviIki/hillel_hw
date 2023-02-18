@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-    <p> {{ form.as_p }}</p>
-    <p><input type="submit" value="accept"></p>
-</body>
+
+{% if error_mas %}
+
+   <a href="{% url 'catalog:person' %}"> {{ error_mas }} </a>
+
+{% else %}
+
+    <form method="post">
+        {% csrf_token %}
+        <body>
+            <p> {{ form.as_p }}</p>
+            <p><input type="submit" value="accept"></p>
+        </body>
+    </form>
+{% endif %}
 </html>

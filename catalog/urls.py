@@ -2,10 +2,10 @@ from django.urls import path
 
 from . import views
 
-app_name = 'polls'
+app_name = 'catalog'
 
 urlpatterns = [
     path('triangle/', views.TriangleView, name='triangle'),
-    path('person/', views.PersonViev, name='peron'),
-    path('person/<int:id>/', views.PersikViev, name='persik')
+    path('person/', views.PersonViev, name='person'),
+    path('person/<int:person_id>/', views.PersikViev, name='persik')
 ]

@@ -1,8 +1,9 @@
 from math import sqrt
 
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 
-from .forms import Side_of_triangleForm, PersonForm
+from .forms import Person, PersonForm, Side_of_triangleForm
 
 
 def TriangleView(request):
@@ -18,11 +19,58 @@ def TriangleView(request):
     return render(request, 'catalog/Triangle.html',
                   {'hip': hip, "q_form": Side_of_triangleForm(), "form": form})
 
+
 def PersonViev(request):
-    form = PersonForm
 
-    return render(request, 'catalog/Person.html', {"form": form})
+    if request.method == 'GET':
+        form = PersonForm
 
-def PersikViev(request, id):
+        return render(request, 'catalog/Person.html', {"form": form})
 
-    return render(request, 'catalog/Person.html', {'id': id})
+    else:
+        form = PersonForm(request.POST)
+
+        if form.is_valid():
+
+            form.clean()
+            x = form.cleaned_data
+            Person.objects.bulk_create(
+                [Person(first_name=x.get('first_name'),
+                        last_name=x.get('last_name'),
+                        email=x.get('email'))])
+
+            return redirect(reverse('catalog:person'))
+
+        else:
+
+            error_mas = "Invalid ti"
+
+            return render(request, 'catalog/Person.html', {"error_mas": error_mas})
+
+
+def PersikViev(request, person_id):
+    my_object = get_object_or_404(Person, pk=person_id)
+
+    if request.method == "GET":
+        form = PersonForm(instance=my_object)
+        return render(request, 'catalog/PersonId.html', {'x': my_object, "form": form})
+
+    else:
+
+        form = PersonForm(request.POST)
+
+        if form.is_valid():
+
+            form.clean()
+            x = form.cleaned_data
+            data_to_update = Person.objects.filter(pk=person_id)
+            data_to_update.update(first_name=x.get('first_name'))
+            data_to_update.update(last_name=x.get('last_name'))
+            data_to_update.update(email=x.get('email'))
+
+            return redirect(reverse('catalog:persik', args=(person_id,)))
+
+        else:
+            error_mas = "Invalid ti"
+
+            return render(request, 'catalog/Person.html', {"error_mas": error_mas})
