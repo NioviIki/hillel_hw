@@ -47,3 +47,6 @@ class SaveLogs(models.Model):
     json_data = models.JSONField()
     date_and_time = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return f"{self.path_of_request}, {self.date_and_time.date()} {self.date_and_time.time()}"
+
