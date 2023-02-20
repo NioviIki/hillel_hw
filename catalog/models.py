@@ -39,3 +39,11 @@ class Person(models.Model):
 
     def __str__(self):
         return f'{self.first_name} {self.last_name} {self.email}'
+
+class SaveLogs(models.Model):
+
+    method_of_request = models.CharField(max_length=4)
+    path_of_request = models.CharField(max_length=100)
+    json_data = models.JSONField()
+    date_and_time = models.DateTimeField(auto_now=True)
+
