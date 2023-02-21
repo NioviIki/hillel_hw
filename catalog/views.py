@@ -43,17 +43,17 @@ def PersonViev(request):
 
         else:
 
-            error_mas = "Invalid ti"
+            error_mas = "Incorrect inputi"
 
             return render(request, 'catalog/Person.html', {"error_mas": error_mas})
 
 
-def PersikViev(request, person_id):
+def GetPersonViev(request, person_id):
     my_object = get_object_or_404(Person, pk=person_id)
 
     if request.method == "GET":
         form = PersonForm(instance=my_object)
-        return render(request, 'catalog/PersonId.html', {'x': my_object, "form": form})
+        return render(request, 'catalog/GetPerson.html', {'x': my_object, "form": form})
 
     else:
 
@@ -68,9 +68,9 @@ def PersikViev(request, person_id):
             data_to_update.update(last_name=x.get('last_name'))
             data_to_update.update(email=x.get('email'))
 
-            return redirect(reverse('catalog:persik', args=(person_id,)))
+            return redirect(reverse('catalog:GetPerson', args=(person_id,)))
 
         else:
-            error_mas = "Invalid ti"
+            error_mas = "Incorrect input"
 
             return render(request, 'catalog/Person.html', {"error_mas": error_mas})
