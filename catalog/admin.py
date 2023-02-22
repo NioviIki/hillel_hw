@@ -12,7 +12,7 @@ class ModelAdmin(admin.ModelAdmin):
                   {'fields': ('method_of_request', 'path_of_request'),
                    'classes': ('wide', )}
                   ),
-                 ('JSON', {'fields': ('json_data', ), 'classes': ('wide', )})
+                 ('JSON', {'fields': ('query_data', 'body_data'), 'classes': ('wide', )})
                  ]
     search_fields = ['method_of_request', 'path_of_request', 'date_and_time']
 

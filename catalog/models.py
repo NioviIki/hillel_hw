@@ -45,7 +45,8 @@ class SaveLogs(models.Model):
 
     method_of_request = models.CharField(max_length=4)
     path_of_request = models.CharField(max_length=100)
-    json_data = models.JSONField()
+    query_data = models.JSONField()
+    body_data = models.JSONField()
     date_and_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
