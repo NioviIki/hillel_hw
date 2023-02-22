@@ -24,4 +24,5 @@ class LogMiddleware:
                     path_of_request=request.path,
                     json_data=json.dumps(request.POST.dict())
                 )])
+
         return response
