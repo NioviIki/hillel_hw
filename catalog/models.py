@@ -40,6 +40,7 @@ class Person(models.Model):
     def __str__(self):
         return f'{self.first_name} {self.last_name} {self.email}'
 
+
 class SaveLogs(models.Model):
 
     method_of_request = models.CharField(max_length=4)
@@ -48,5 +49,5 @@ class SaveLogs(models.Model):
     date_and_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.path_of_request}, {self.date_and_time.date()} {self.date_and_time.time()}"
-
+        return f"{self.path_of_request}, {self.date_and_time.date()}" \
+               f" {self.date_and_time.time()}"

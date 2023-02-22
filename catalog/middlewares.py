@@ -1,4 +1,5 @@
 import json
+
 from .models import SaveLogs
 
 
@@ -9,7 +10,6 @@ class LogMiddleware:
     def __call__(self, request):
 
         response = self.get_response(request)
-
 
         if "/admin/" not in request.path:
             if request.method == "GET":
