@@ -16,7 +16,7 @@ def TriangleView(request):
         hip = int(sqrt(int(cathetuses_of_triangle[0]) ** 2 +
                        int(cathetuses_of_triangle[1]) ** 2))
 
-    return render(request, 'catalog/Triangle.html',
+    return render(request, 'catalog/triangle.html',
                   {'hip': hip, "q_form": Side_of_triangleForm(), "form": form})
 
 
@@ -24,15 +24,14 @@ def person_create(request):
     if request.method == 'POST':
         form = PersonForm(request.POST)
         if form.is_valid():
-            form.clean()
             form.save()
             return redirect(reverse('catalog:person'))
         else:
             error_mas = "Incorrect inputi"
-            return render(request, 'catalog/Person.html', {"error_mas": error_mas})
+            return render(request, 'catalog/person.html', {"error_mas": error_mas})
     else:
-        form = PersonForm
-        return render(request, 'catalog/Person.html', {"form": form})
+        form = PersonForm()
+        return render(request, 'catalog/person.html', {"form": form})
 
 
 def person_update(request, person_id):
@@ -40,12 +39,11 @@ def person_update(request, person_id):
     if request.method == "POST":
         form = PersonForm(request.POST, instance=my_object)
         if form.is_valid():
-            form.clean()
             form.save()
             return redirect(reverse('catalog:person_update', args=(person_id,)))
         else:
             error_mas = "Incorrect input"
-            return render(request, 'catalog/Person.html', {"error_mas": error_mas})
+            return render(request, 'catalog/person.html', {"error_mas": error_mas})
     else:
         form = PersonForm(instance=my_object)
-        return render(request, 'catalog/GetPerson.html', {'x': my_object, "form": form})
+        return render(request, 'catalog/get_person.html', {'x': my_object, "form": form})
