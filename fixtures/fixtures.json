@@ -1,614 +1,1454 @@
 [
 {
-  "model": "auth.permission",
-  "pk": 1,
-  "fields": {
-    "name": "Can add log entry",
-    "content_type": 1,
-    "codename": "add_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 2,
-  "fields": {
-    "name": "Can change log entry",
-    "content_type": 1,
-    "codename": "change_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 3,
-  "fields": {
-    "name": "Can delete log entry",
-    "content_type": 1,
-    "codename": "delete_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 4,
-  "fields": {
-    "name": "Can view log entry",
-    "content_type": 1,
-    "codename": "view_logentry"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 5,
-  "fields": {
-    "name": "Can add permission",
-    "content_type": 2,
-    "codename": "add_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 6,
-  "fields": {
-    "name": "Can change permission",
-    "content_type": 2,
-    "codename": "change_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 7,
-  "fields": {
-    "name": "Can delete permission",
-    "content_type": 2,
-    "codename": "delete_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 8,
-  "fields": {
-    "name": "Can view permission",
-    "content_type": 2,
-    "codename": "view_permission"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 9,
-  "fields": {
-    "name": "Can add group",
-    "content_type": 3,
-    "codename": "add_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 10,
-  "fields": {
-    "name": "Can change group",
-    "content_type": 3,
-    "codename": "change_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 11,
-  "fields": {
-    "name": "Can delete group",
-    "content_type": 3,
-    "codename": "delete_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 12,
-  "fields": {
-    "name": "Can view group",
-    "content_type": 3,
-    "codename": "view_group"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 13,
-  "fields": {
-    "name": "Can add user",
-    "content_type": 4,
-    "codename": "add_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 14,
-  "fields": {
-    "name": "Can change user",
-    "content_type": 4,
-    "codename": "change_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 15,
-  "fields": {
-    "name": "Can delete user",
-    "content_type": 4,
-    "codename": "delete_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 16,
-  "fields": {
-    "name": "Can view user",
-    "content_type": 4,
-    "codename": "view_user"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 17,
-  "fields": {
-    "name": "Can add content type",
-    "content_type": 5,
-    "codename": "add_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 18,
-  "fields": {
-    "name": "Can change content type",
-    "content_type": 5,
-    "codename": "change_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 19,
-  "fields": {
-    "name": "Can delete content type",
-    "content_type": 5,
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 20,
-  "fields": {
-    "name": "Can view content type",
-    "content_type": 5,
-    "codename": "view_contenttype"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 21,
-  "fields": {
-    "name": "Can add session",
-    "content_type": 6,
-    "codename": "add_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 22,
-  "fields": {
-    "name": "Can change session",
-    "content_type": 6,
-    "codename": "change_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 23,
-  "fields": {
-    "name": "Can delete session",
-    "content_type": 6,
-    "codename": "delete_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 24,
-  "fields": {
-    "name": "Can view session",
-    "content_type": 6,
-    "codename": "view_session"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 25,
-  "fields": {
-    "name": "Can add product",
-    "content_type": 7,
-    "codename": "add_product"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 26,
-  "fields": {
-    "name": "Can change product",
-    "content_type": 7,
-    "codename": "change_product"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 27,
-  "fields": {
-    "name": "Can delete product",
-    "content_type": 7,
-    "codename": "delete_product"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 28,
-  "fields": {
-    "name": "Can view product",
-    "content_type": 7,
-    "codename": "view_product"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 29,
-  "fields": {
-    "name": "Can add vendor",
-    "content_type": 8,
-    "codename": "add_vendor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 30,
-  "fields": {
-    "name": "Can change vendor",
-    "content_type": 8,
-    "codename": "change_vendor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 31,
-  "fields": {
-    "name": "Can delete vendor",
-    "content_type": 8,
-    "codename": "delete_vendor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 32,
-  "fields": {
-    "name": "Can view vendor",
-    "content_type": 8,
-    "codename": "view_vendor"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 33,
-  "fields": {
-    "name": "Can add client",
-    "content_type": 9,
-    "codename": "add_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 34,
-  "fields": {
-    "name": "Can change client",
-    "content_type": 9,
-    "codename": "change_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 35,
-  "fields": {
-    "name": "Can delete client",
-    "content_type": 9,
-    "codename": "delete_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 36,
-  "fields": {
-    "name": "Can view client",
-    "content_type": 9,
-    "codename": "view_client"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 37,
-  "fields": {
-    "name": "Can add city",
-    "content_type": 10,
-    "codename": "add_city"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 38,
-  "fields": {
-    "name": "Can change city",
-    "content_type": 10,
-    "codename": "change_city"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 39,
-  "fields": {
-    "name": "Can delete city",
-    "content_type": 10,
-    "codename": "delete_city"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 40,
-  "fields": {
-    "name": "Can view city",
-    "content_type": 10,
-    "codename": "view_city"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 41,
-  "fields": {
-    "name": "Can add retailer",
-    "content_type": 11,
-    "codename": "add_retailer"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 42,
-  "fields": {
-    "name": "Can change retailer",
-    "content_type": 11,
-    "codename": "change_retailer"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 43,
-  "fields": {
-    "name": "Can delete retailer",
-    "content_type": 11,
-    "codename": "delete_retailer"
-  }
-},
-{
-  "model": "auth.permission",
-  "pk": 44,
-  "fields": {
-    "name": "Can view retailer",
-    "content_type": 11,
-    "codename": "view_retailer"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 1,
-  "fields": {
-    "app_label": "admin",
-    "model": "logentry"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 2,
-  "fields": {
-    "app_label": "auth",
-    "model": "permission"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 3,
-  "fields": {
-    "app_label": "auth",
-    "model": "group"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 4,
-  "fields": {
-    "app_label": "auth",
-    "model": "user"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 5,
-  "fields": {
-    "app_label": "contenttypes",
-    "model": "contenttype"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 6,
-  "fields": {
-    "app_label": "sessions",
-    "model": "session"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 7,
-  "fields": {
-    "app_label": "catalog",
-    "model": "product"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 8,
-  "fields": {
-    "app_label": "catalog",
-    "model": "vendor"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 9,
-  "fields": {
-    "app_label": "catalog",
-    "model": "client"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 10,
-  "fields": {
-    "app_label": "catalog",
-    "model": "city"
-  }
-},
-{
-  "model": "contenttypes.contenttype",
-  "pk": 11,
-  "fields": {
-    "app_label": "catalog",
-    "model": "retailer"
-  }
-},
-{
-  "model": "catalog.city",
-  "pk": 1,
-  "fields": {
-    "city": "Dnipro"
-  }
-},
-{
-  "model": "catalog.city",
-  "pk": 2,
-  "fields": {
-    "city": "Lviv"
-  }
-},
-{
-  "model": "catalog.city",
-  "pk": 3,
-  "fields": {
-    "city": "Donetsk"
-  }
-},
-{
-  "model": "catalog.city",
-  "pk": 4,
-  "fields": {
-    "city": "Zaporizha"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 1,
-  "fields": {
-    "product": "Knife"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 2,
-  "fields": {
-    "product": "Doors"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 3,
-  "fields": {
-    "product": "Beds"
-  }
-},
-{
-  "model": "catalog.product",
-  "pk": 4,
-  "fields": {
-    "product": "Chairs"
-  }
-},
-{
-  "model": "catalog.retailer",
-  "pk": 1,
-  "fields": {
-    "company": "First_company",
-    "city": 1
-  }
-},
-{
-  "model": "catalog.retailer",
-  "pk": 2,
-  "fields": {
-    "company": "Second_company",
-    "city": 2
-  }
-},
-{
-  "model": "catalog.retailer",
-  "pk": 3,
-  "fields": {
-    "company": "Random_company",
-    "city": 3
-  }
-},
-{
-  "model": "catalog.client",
-  "pk": 1,
-  "fields": {
-    "key": 1,
-    "product": [
-      1
-    ]
-  }
-},
-{
-  "model": "catalog.client",
-  "pk": 2,
-  "fields": {
-    "key": 1,
-    "product": [
-      1
-    ]
-  }
-},
-{
-  "model": "catalog.client",
-  "pk": 3,
-  "fields": {
-    "key": 2,
-    "product": [
-      1
-    ]
-  }
-},
-{
-  "model": "catalog.client",
-  "pk": 4,
-  "fields": {
-    "key": 4,
-    "product": [
-      2
-    ]
-  }
-},
-{
-  "model": "catalog.client",
-  "pk": 5,
-  "fields": {
-    "key": 3,
-    "product": []
-  }
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-02-23T15:01:55.035Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "Christie Golden",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-02-23T15:02:06.050Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "2",
+        "object_repr": "Clive Staples Lewis",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-02-23T15:02:16.333Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "3",
+        "object_repr": "Haruki Murakami",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-02-23T15:02:26.899Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "4",
+        "object_repr": "Vladimir Nabokov",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-02-23T15:02:36.627Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "5",
+        "object_repr": "Howard Phillips Lovecraft",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-02-23T15:02:48.042Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "1",
+        "object_repr": "exemple1",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-02-23T15:02:50.938Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "2",
+        "object_repr": "exemple2",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-02-23T15:02:53.758Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "3",
+        "object_repr": "exemple3",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-02-23T15:02:56.319Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "4",
+        "object_repr": "exemple4",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-02-23T15:03:00.161Z",
+        "user": 1,
+        "content_type": 15,
+        "object_id": "5",
+        "object_repr": "exemple5",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-02-23T15:03:47.211Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "The Lion, the Witch and the Wardrobe",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-02-23T15:04:20.597Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "The Silver Chair",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-02-23T15:04:51.413Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "The Magician's Nephew",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-02-23T15:05:21.731Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "Rise of the Lich King",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-02-23T15:05:49.667Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "Before the Storm",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-02-23T15:06:16.749Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Lord of the Clans",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-02-23T15:06:47.120Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "A Wild Sheep Chase",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-02-23T15:07:14.675Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Kafka on the Shore",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-02-23T15:07:43.727Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "1Q84",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2023-02-23T15:08:06.073Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "Pale Fire",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2023-02-23T15:08:35.971Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "11",
+        "object_repr": "Lolita",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2023-02-23T15:08:59.256Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "12",
+        "object_repr": "Mary",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2023-02-23T15:09:34.115Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "13",
+        "object_repr": "The Call of Cthulhu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2023-02-23T15:09:49.104Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "13",
+        "object_repr": "The Call of Cthulhu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Authors\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2023-02-23T15:10:21.958Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "14",
+        "object_repr": "At the Mountains of Madness",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2023-02-23T15:10:48.724Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "15",
+        "object_repr": "Dagon",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+        "name": "Can add log entry",
+        "content_type": 1,
+        "codename": "add_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+        "name": "Can change log entry",
+        "content_type": 1,
+        "codename": "change_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+        "name": "Can delete log entry",
+        "content_type": 1,
+        "codename": "delete_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+        "name": "Can view log entry",
+        "content_type": 1,
+        "codename": "view_logentry"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+        "name": "Can add permission",
+        "content_type": 2,
+        "codename": "add_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+        "name": "Can change permission",
+        "content_type": 2,
+        "codename": "change_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+        "name": "Can delete permission",
+        "content_type": 2,
+        "codename": "delete_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+        "name": "Can view permission",
+        "content_type": 2,
+        "codename": "view_permission"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+        "name": "Can add group",
+        "content_type": 3,
+        "codename": "add_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+        "name": "Can change group",
+        "content_type": 3,
+        "codename": "change_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+        "name": "Can delete group",
+        "content_type": 3,
+        "codename": "delete_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+        "name": "Can view group",
+        "content_type": 3,
+        "codename": "view_group"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+        "name": "Can add user",
+        "content_type": 4,
+        "codename": "add_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+        "name": "Can change user",
+        "content_type": 4,
+        "codename": "change_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+        "name": "Can delete user",
+        "content_type": 4,
+        "codename": "delete_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+        "name": "Can view user",
+        "content_type": 4,
+        "codename": "view_user"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+        "name": "Can add content type",
+        "content_type": 5,
+        "codename": "add_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+        "name": "Can change content type",
+        "content_type": 5,
+        "codename": "change_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+        "name": "Can delete content type",
+        "content_type": 5,
+        "codename": "delete_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+        "name": "Can view content type",
+        "content_type": 5,
+        "codename": "view_contenttype"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+        "name": "Can add session",
+        "content_type": 6,
+        "codename": "add_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+        "name": "Can change session",
+        "content_type": 6,
+        "codename": "change_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+        "name": "Can delete session",
+        "content_type": 6,
+        "codename": "delete_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+        "name": "Can view session",
+        "content_type": 6,
+        "codename": "view_session"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+        "name": "Can add city",
+        "content_type": 7,
+        "codename": "add_city"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+        "name": "Can change city",
+        "content_type": 7,
+        "codename": "change_city"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+        "name": "Can delete city",
+        "content_type": 7,
+        "codename": "delete_city"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+        "name": "Can view city",
+        "content_type": 7,
+        "codename": "view_city"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+        "name": "Can add product",
+        "content_type": 8,
+        "codename": "add_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+        "name": "Can change product",
+        "content_type": 8,
+        "codename": "change_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+        "name": "Can delete product",
+        "content_type": 8,
+        "codename": "delete_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+        "name": "Can view product",
+        "content_type": 8,
+        "codename": "view_product"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+        "name": "Can add client",
+        "content_type": 9,
+        "codename": "add_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+        "name": "Can change client",
+        "content_type": 9,
+        "codename": "change_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+        "name": "Can delete client",
+        "content_type": 9,
+        "codename": "delete_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+        "name": "Can view client",
+        "content_type": 9,
+        "codename": "view_client"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+        "name": "Can add retailer",
+        "content_type": 10,
+        "codename": "add_retailer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+        "name": "Can change retailer",
+        "content_type": 10,
+        "codename": "change_retailer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+        "name": "Can delete retailer",
+        "content_type": 10,
+        "codename": "delete_retailer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+        "name": "Can view retailer",
+        "content_type": 10,
+        "codename": "view_retailer"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+        "name": "Can add person",
+        "content_type": 11,
+        "codename": "add_person"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+        "name": "Can change person",
+        "content_type": 11,
+        "codename": "change_person"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+        "name": "Can delete person",
+        "content_type": 11,
+        "codename": "delete_person"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+        "name": "Can view person",
+        "content_type": 11,
+        "codename": "view_person"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+        "name": "Can add save logs",
+        "content_type": 12,
+        "codename": "add_savelogs"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+        "name": "Can change save logs",
+        "content_type": 12,
+        "codename": "change_savelogs"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+        "name": "Can delete save logs",
+        "content_type": 12,
+        "codename": "delete_savelogs"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+        "name": "Can view save logs",
+        "content_type": 12,
+        "codename": "view_savelogs"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+        "name": "Can add author",
+        "content_type": 13,
+        "codename": "add_author"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+        "name": "Can change author",
+        "content_type": 13,
+        "codename": "change_author"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+        "name": "Can delete author",
+        "content_type": 13,
+        "codename": "delete_author"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+        "name": "Can view author",
+        "content_type": 13,
+        "codename": "view_author"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+        "name": "Can add book",
+        "content_type": 14,
+        "codename": "add_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+        "name": "Can change book",
+        "content_type": 14,
+        "codename": "change_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+        "name": "Can delete book",
+        "content_type": 14,
+        "codename": "delete_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+        "name": "Can view book",
+        "content_type": 14,
+        "codename": "view_book"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+        "name": "Can add publisher",
+        "content_type": 15,
+        "codename": "add_publisher"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+        "name": "Can change publisher",
+        "content_type": 15,
+        "codename": "change_publisher"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+        "name": "Can delete publisher",
+        "content_type": 15,
+        "codename": "delete_publisher"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+        "name": "Can view publisher",
+        "content_type": 15,
+        "codename": "view_publisher"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 61,
+    "fields": {
+        "name": "Can add store",
+        "content_type": 16,
+        "codename": "add_store"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 62,
+    "fields": {
+        "name": "Can change store",
+        "content_type": 16,
+        "codename": "change_store"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 63,
+    "fields": {
+        "name": "Can delete store",
+        "content_type": 16,
+        "codename": "delete_store"
+    }
+},
+{
+    "model": "auth.permission",
+    "pk": 64,
+    "fields": {
+        "name": "Can view store",
+        "content_type": 16,
+        "codename": "view_store"
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$r0ue7VPvVX6Oj7E4eHYwn3$RO1IqSznUqMINYW4iUQd1YozETFMRlQ+8p8ZQ87C4Os=",
+        "last_login": "2023-02-23T14:55:15.687Z",
+        "is_superuser": true,
+        "username": "niovi",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-02-23T14:55:09.767Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+        "app_label": "admin",
+        "model": "logentry"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+        "app_label": "auth",
+        "model": "permission"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+        "app_label": "auth",
+        "model": "group"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+        "app_label": "auth",
+        "model": "user"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+        "app_label": "contenttypes",
+        "model": "contenttype"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "sessions",
+        "model": "session"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+        "app_label": "catalog",
+        "model": "city"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+        "app_label": "catalog",
+        "model": "product"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+        "app_label": "catalog",
+        "model": "client"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+        "app_label": "catalog",
+        "model": "retailer"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+        "app_label": "catalog",
+        "model": "person"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+        "app_label": "catalog",
+        "model": "savelogs"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+        "app_label": "new_hw",
+        "model": "author"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+        "app_label": "new_hw",
+        "model": "book"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+        "app_label": "new_hw",
+        "model": "publisher"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+        "app_label": "new_hw",
+        "model": "store"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "kpqqde169zn2z86a5ylzzlfbrgtdlonv",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAQMoBL956BzAwgVQNJaVeNd9cmXej2v_f-JiKuS43ryHOckrgILU6_GyE_c9tBemC7d8m9LfNEclfkQYe89ZRf18P9O6g46rcmDuQLBWQDAEUrVZR3TpNDZy2GRBrAQmZtqZDTZ2YTwLNTBRR5I94f7io31w:1pVD07:U--OpUqXoe4bdcI_RbGK-5YNPRAmEpjFnQXwNTBedLE",
+        "expire_date": "2023-03-09T14:55:15.842Z"
+    }
+},
+{
+    "model": "catalog.savelogs",
+    "pk": 1,
+    "fields": {
+        "method_of_request": "GET",
+        "path_of_request": "/favicon.ico",
+        "query_data": {},
+        "body_data": {},
+        "date_and_time": "2023-02-23T14:55:19.571Z"
+    }
+},
+{
+    "model": "catalog.savelogs",
+    "pk": 2,
+    "fields": {
+        "method_of_request": "GET",
+        "path_of_request": "/favicon.ico",
+        "query_data": {},
+        "body_data": {},
+        "date_and_time": "2023-02-23T14:56:02.016Z"
+    }
+},
+{
+    "model": "catalog.savelogs",
+    "pk": 3,
+    "fields": {
+        "method_of_request": "GET",
+        "path_of_request": "/favicon.ico",
+        "query_data": {},
+        "body_data": {},
+        "date_and_time": "2023-02-23T14:56:35.866Z"
+    }
+},
+{
+    "model": "catalog.savelogs",
+    "pk": 4,
+    "fields": {
+        "method_of_request": "GET",
+        "path_of_request": "/favicon.ico",
+        "query_data": {},
+        "body_data": {},
+        "date_and_time": "2023-02-23T14:58:18.174Z"
+    }
+},
+{
+    "model": "new_hw.author",
+    "pk": 1,
+    "fields": {
+        "name": "Christie Golden",
+        "age": 59
+    }
+},
+{
+    "model": "new_hw.author",
+    "pk": 2,
+    "fields": {
+        "name": "Clive Staples Lewis",
+        "age": 65
+    }
+},
+{
+    "model": "new_hw.author",
+    "pk": 3,
+    "fields": {
+        "name": "Haruki Murakami",
+        "age": 74
+    }
+},
+{
+    "model": "new_hw.author",
+    "pk": 4,
+    "fields": {
+        "name": "Vladimir Nabokov",
+        "age": 78
+    }
+},
+{
+    "model": "new_hw.author",
+    "pk": 5,
+    "fields": {
+        "name": "Howard Phillips Lovecraft",
+        "age": 47
+    }
+},
+{
+    "model": "new_hw.publisher",
+    "pk": 1,
+    "fields": {
+        "name": "exemple1"
+    }
+},
+{
+    "model": "new_hw.publisher",
+    "pk": 2,
+    "fields": {
+        "name": "exemple2"
+    }
+},
+{
+    "model": "new_hw.publisher",
+    "pk": 3,
+    "fields": {
+        "name": "exemple3"
+    }
+},
+{
+    "model": "new_hw.publisher",
+    "pk": 4,
+    "fields": {
+        "name": "exemple4"
+    }
+},
+{
+    "model": "new_hw.publisher",
+    "pk": 5,
+    "fields": {
+        "name": "exemple5"
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 1,
+    "fields": {
+        "name": "The Lion, the Witch and the Wardrobe",
+        "pages": 206,
+        "price": "15.00",
+        "rating": 4.23,
+        "publisher": 1,
+        "pubdate": "1950-10-16",
+        "authors": [
+            2
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 2,
+    "fields": {
+        "name": "The Silver Chair",
+        "pages": 243,
+        "price": "20.00",
+        "rating": 4.4,
+        "publisher": 1,
+        "pubdate": "1953-09-07",
+        "authors": [
+            2
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 3,
+    "fields": {
+        "name": "The Magician's Nephew",
+        "pages": 221,
+        "price": "24.00",
+        "rating": 4.05,
+        "publisher": 1,
+        "pubdate": "1995-05-02",
+        "authors": [
+            2
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 4,
+    "fields": {
+        "name": "Rise of the Lich King",
+        "pages": 320,
+        "price": "75.00",
+        "rating": 4.12,
+        "publisher": 2,
+        "pubdate": "2007-08-21",
+        "authors": [
+            1
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 5,
+    "fields": {
+        "name": "Before the Storm",
+        "pages": 304,
+        "price": "10.00",
+        "rating": 4.6,
+        "publisher": 2,
+        "pubdate": "2018-11-27",
+        "authors": [
+            1
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 6,
+    "fields": {
+        "name": "Lord of the Clans",
+        "pages": 278,
+        "price": "9.00",
+        "rating": 4.13,
+        "publisher": 2,
+        "pubdate": "2001-10-01",
+        "authors": [
+            1
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 7,
+    "fields": {
+        "name": "A Wild Sheep Chase",
+        "pages": 353,
+        "price": "25.00",
+        "rating": 3.93,
+        "publisher": 3,
+        "pubdate": "1982-10-13",
+        "authors": [
+            3
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 8,
+    "fields": {
+        "name": "Kafka on the Shore",
+        "pages": 457,
+        "price": "11.00",
+        "rating": 4.14,
+        "publisher": 3,
+        "pubdate": "2002-06-01",
+        "authors": [
+            3
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 9,
+    "fields": {
+        "name": "1Q84",
+        "pages": 925,
+        "price": "20.00",
+        "rating": 3.93,
+        "publisher": 3,
+        "pubdate": "2009-05-28",
+        "authors": [
+            3
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 10,
+    "fields": {
+        "name": "Pale Fire",
+        "pages": 246,
+        "price": "13.00",
+        "rating": 2.16,
+        "publisher": 4,
+        "pubdate": "1962-01-01",
+        "authors": [
+            4
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 11,
+    "fields": {
+        "name": "Lolita",
+        "pages": 331,
+        "price": "34.00",
+        "rating": 3.9,
+        "publisher": 4,
+        "pubdate": "1955-09-01",
+        "authors": [
+            4
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 12,
+    "fields": {
+        "name": "Mary",
+        "pages": 114,
+        "price": "10.00",
+        "rating": 3.7,
+        "publisher": 4,
+        "pubdate": "1926-01-01",
+        "authors": [
+            4
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 13,
+    "fields": {
+        "name": "The Call of Cthulhu",
+        "pages": 43,
+        "price": "23.00",
+        "rating": 3.98,
+        "publisher": 4,
+        "pubdate": "1928-02-01",
+        "authors": [
+            5
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 14,
+    "fields": {
+        "name": "At the Mountains of Madness",
+        "pages": 194,
+        "price": "15.00",
+        "rating": 3.83,
+        "publisher": 5,
+        "pubdate": "1931-01-01",
+        "authors": [
+            5
+        ]
+    }
+},
+{
+    "model": "new_hw.book",
+    "pk": 15,
+    "fields": {
+        "name": "Dagon",
+        "pages": 15,
+        "price": "15.00",
+        "rating": 3.69,
+        "publisher": 5,
+        "pubdate": "1917-05-01",
+        "authors": [
+            5
+        ]
+    }
+},
+{
+    "model": "new_hw.store",
+    "pk": 1,
+    "fields": {
+        "name": "exemple1",
+        "books": []
+    }
+},
+{
+    "model": "new_hw.store",
+    "pk": 2,
+    "fields": {
+        "name": "exemple2",
+        "books": []
+    }
+},
+{
+    "model": "new_hw.store",
+    "pk": 3,
+    "fields": {
+        "name": "exemple3",
+        "books": []
+    }
+},
+{
+    "model": "new_hw.store",
+    "pk": 4,
+    "fields": {
+        "name": "exemple4",
+        "books": []
+    }
+},
+{
+    "model": "new_hw.store",
+    "pk": 5,
+    "fields": {
+        "name": "exemple5",
+        "books": []
+    }
 }
 ]
