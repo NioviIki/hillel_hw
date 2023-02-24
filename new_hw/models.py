@@ -22,8 +22,18 @@ class Book(models.Model):
     pubdate = models.DateField()
     def __str__(self):
         return self.name
+
+    def author(self):
+        author = [i.get('name') for i in self.authors.all().values()]
+        return ", ".join(author)
+
 class Store(models.Model):
     name = models.CharField(max_length=300)
     books = models.ManyToManyField(Book)
     def __str__(self):
         return self.name
+
+    def book_in_store(self):
+        book_in_store = [i.get('name') for i in self.books.all().values()]
+        print(book_in_store)
+        return ", ".join(book_in_store)
