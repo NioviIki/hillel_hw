@@ -22,5 +22,6 @@ urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')),
 
     path('catalog/', include('catalog.urls')),
-    # path('/', include('new_hw.urls'))
+
+    path('', include('new_hw.urls'))
 ]
