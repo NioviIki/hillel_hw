@@ -5,14 +5,16 @@ class Author(models.Model):
     name = models.CharField(max_length=100)
     age = models.IntegerField()
 
-
     def __str__(self):
         return self.name
+
 
 class Publisher(models.Model):
     name = models.CharField(max_length=300)
+
     def __str__(self):
         return self.name
+
 
 class Book(models.Model):
     name = models.CharField(max_length=300)
@@ -22,6 +24,7 @@ class Book(models.Model):
     authors = models.ManyToManyField(Author)
     publisher = models.ForeignKey(Publisher, on_delete=models.CASCADE)
     pubdate = models.DateField()
+
     def __str__(self):
         return self.name
 
@@ -33,11 +36,10 @@ class Book(models.Model):
 class Store(models.Model):
     name = models.CharField(max_length=300)
     books = models.ManyToManyField(Book)
+
     def __str__(self):
         return self.name
 
-
     def book_in_store(self):
         book_in_store = [i.get('name') for i in self.books.all().values()]
-        print(book_in_store)
         return ", ".join(book_in_store)

@@ -1,10 +1,12 @@
 from django.contrib import admin
 
-from .models import Author, Publisher, Book, Store
+from .models import Author, Book, Publisher, Store
+
 
 class BookPublisherInline(admin.TabularInline):
     model = Book
     extra = 1
+
 
 class BookStoreInline(admin.TabularInline):
     model = Store.books.through
@@ -24,7 +26,8 @@ class PublisherAdmin(admin.ModelAdmin):
     list_display = ('name', )
     list_per_page = 20
     search_fields = ['name']
-    inlines = [BookPublisherInline,]
+    inlines = [BookPublisherInline, ]
+
 
 @admin.register(Store)
 class StoreAdmin(admin.ModelAdmin):
@@ -33,14 +36,10 @@ class StoreAdmin(admin.ModelAdmin):
     search_fields = ('name', )
     inlines = [BookStoreInline, ]
 
+
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     list_per_page = 20
     list_display = ('name', 'rating', 'author')
     list_filter = ('rating', 'authors')
     search_fields = ('name', 'author')
-
-
-
-
-
