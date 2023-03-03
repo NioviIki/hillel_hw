@@ -36,6 +36,7 @@ class Store(models.Model):
     def __str__(self):
         return self.name
 
+
     def book_in_store(self):
         book_in_store = [i.get('name') for i in self.books.all().values()]
         print(book_in_store)

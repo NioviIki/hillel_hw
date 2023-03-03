@@ -5,9 +5,14 @@
     <title>Title</title>
 </head>
 <body>
-    {% for book in book_list %}
-        <p><a href="{% url 'new_hw:detail' book.id %}">{{ book.name }}</a> {{ book.authors__name }}</p>
-    {% endfor %}
+{#    {% for book in book_list %}#}
+{#        <p><a href="{% url 'new_hw:detail' book.id %}">{{ book.name }}</a> {{ book.authors__name }}</p>#}
+{#    {% endfor %}#}
+{{ book_list.authors }}
+
+{% for book in book_list %}
+        <p><a href="{% url 'new_hw:detail' book.id %}">{{ book.name }}</a>  {% for i in book.authors.name %} {{ i }}  {% endfor %}</p>
+{% endfor %}
 
 </body>
 </html>

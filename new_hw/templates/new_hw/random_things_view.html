@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for i in averge_price %}
+    <p> {{ i.name }}  {{ i.av_pr }} </p>
+    {{ i.av_r }}    {{ i.count }}
+{% endfor %}
+</body>
+</html>

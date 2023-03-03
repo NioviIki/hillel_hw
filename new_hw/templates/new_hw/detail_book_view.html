@@ -9,10 +9,11 @@
      <h2> {{ book.name }} </h2>
 
     {% for i in book.authors.all %}
+
         <p>
         <a href="{% url 'new_hw:author_detail'  i.id%}">{{ i }}</a>
-
         </p>
+
     {% endfor %}
 
     <p> {{ book.pubdate }}</p>
@@ -20,9 +21,11 @@
     <p> {{ book.price }}$ </p>
     <p> rating: {{ book.rating }}</p>
     <p> publisher: {{ book.publisher }}</p>
-     <p> Selling in:</p>
+    <p> Selling in:</p>
      {% for i in book.store_set.all %}
-    <p>  {{ i }} </p>
+         <p>
+         <a href="{% url 'new_hw:store_view' i.id%}"> {{ i }}</a>
+         </p>
      {% endfor %}
 </body>
 </html>
