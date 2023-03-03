@@ -21,7 +21,7 @@ def detail_book_view(request, pk):
 
 
 def author_detail_view(request, pk):
-    # author = Author.objects.get(pk=pk)
+
     author = Author.objects.prefetch_related("book_set").get(pk=pk)
     return render(request, "new_hw/author_detail_view.html", {'author': author})
 
@@ -37,12 +37,12 @@ def store_view(request, pk):
 
 
 def random_things_view(request):
-    x = Store.objects.annotate(av_pr=Avg('books__price'), av_r=Avg('books__rating'),
-                               count=Count('books'))
-    averge_price = []
-    for i in x:
-        averge_price.append({'name': i.name, "av_pr": int(i.av_pr),
-                             'av_r': int(i.av_r), 'count': i.count})
+    stores = Store.objects.annotate(av_pr=Avg('books__price'),
+                                    av_r=Avg('books__rating'), count=Count('books'))
+    random_staff = []
+    for store in stores:
+        random_staff.append({'name': store.name, "av_pr": int(store.av_pr),
+                             'av_r': int(store.av_r), 'count': store.count})
 
     return render(request, 'new_hw/random_things_view.html',
-                  {'averge_price': averge_price})
+                  {'random_staff': random_staff})

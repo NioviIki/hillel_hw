@@ -6,9 +6,12 @@
 </head>
 <body>
 
-{% for i in averge_price %}
-    <p> {{ i.name }}  {{ i.av_pr }} </p>
-    {{ i.av_r }}    {{ i.count }}
+{% for i in random_staff %}
+    <h3> {{ i.name }}  </h3>
+    <p> Average cost: {{ i.av_pr }}$</p>
+    <p>{{ i.av_r }}*</p>
+    <p>Count: {{ i.count }}</p>
 {% endfor %}
+
 </body>
 </html>
