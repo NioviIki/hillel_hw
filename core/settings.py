@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django_extensions",
 
     'catalog.apps.CatalogConfig',
-    'new_hw.apps.NewHwConfig'
+    'new_hw.apps.NewHwConfig',
+    'send_email.apps.SendEmailConfig'
 ]
 
 MIDDLEWARE = [
