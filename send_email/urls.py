@@ -5,5 +5,5 @@ from . import views
 app_name = 'send_email'
 
 urlpatterns = [
-    path('', views.tes, name='tes')
+    path('', views.email_feedback, name='feedback')
 ]

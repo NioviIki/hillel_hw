@@ -25,5 +25,5 @@ urlpatterns = [
 
     path('', include('new_hw.urls')),
 
-    path('tes/', include('send_email.urls'))
+    path('feedback/', include('send_email.urls'))
 ]

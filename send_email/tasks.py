@@ -1,14 +1,18 @@
-from celery import shared_task
-from django.core.mail import send_mail
-from celery import shared_task
-
-from core.celery import app
-from core import settings
 import time
-@shared_task()
-def send_massage(subject, message,  recipient_list=settings.EMAIL_HOST_USER, from_email=settings.EMAIL_HOST_USER):
 
-    # time.sleep(tim)
+from celery import shared_task
+
+from core import settings
+
+from django.core.mail import send_mail
+
+
+@shared_task()
+def send_massage(subject, message, now, recipient_list,
+                 from_email=settings.EMAIL_HOST_USER):
+
+    time.sleep(now)
+
     send_mail(subject=subject,
               message=message,
               from_email=from_email,
