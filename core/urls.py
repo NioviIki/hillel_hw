@@ -23,5 +23,7 @@ urlpatterns = [
 
     path('catalog/', include('catalog.urls')),
 
-    path('', include('new_hw.urls'))
+    path('', include('new_hw.urls')),
+
+    path('tes/', include('send_email.urls'))
 ]
