@@ -6,6 +6,9 @@
 </head>
 <body>
     <p>{{ store.name }}</p>
+{% for book in store.books.all %}
+    <p>{{ book }}</p>
+{% endfor %}
 
 </body>
 </html>

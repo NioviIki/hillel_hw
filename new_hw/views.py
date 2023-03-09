@@ -45,12 +45,15 @@ class PublisherDetailView(generic.DetailView):
     model = Publisher
     template_name = 'new_hw/publisher_detail_view.html'
 
+    def get_queryset(self):
+        return Publisher.objects.prefetch_related('book_set')
+
 class StoreListView(generic.ListView):
     model = Store
     template_name = 'new_hw/store_list_view.html'
 
     def get_queryset(self):
-        return Store.objects.all()
+        return Store.objects.prefetch_related('books')
 
 class StoreDetailView(generic.DetailView):
     model = Store
