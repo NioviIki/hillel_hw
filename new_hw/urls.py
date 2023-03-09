@@ -3,16 +3,14 @@ from django.urls import path
 from . import views
 
 app_name = 'new_hw'
-# urlpatterns = [
-#     path('', views.IndexView.as_view(), name='index'),
-#     path('<int:pk>/', views.DetailView.as_view(), name='detail'),
-#     path('<int:pk>/results/', views.ResultsView.as_view(), name='results'),
-#     path('<int:question_id>/vote/', views.vote, name='vote'),
 
 urlpatterns = [
-    path('book/', views.book_view, name='book'),
-    path('book/<int:pk>', views.detail_book_view, name='detail'),
-    path('author/<int:pk>', views.author_detail_view, name='author_detail'),
-    path('store/<int:pk>', views.store_view, name='store_view'),
-    path('random/', views.random_things_view, name='random_th')
+    path('author/', views.AuthoLlistView.as_view(), name='author_list'),
+    path('author/<int:pk>/', views.AuthorDetailView.as_view(), name='author_detail'),
+    path('book/', views.BookListView.as_view(), name='book_list'),
+    path('book/<int:pk>', views.BookDetailView.as_view(), name='book_detail'),
+    path('publisher/', views.PublisherListView.as_view(), name='publisher_list'),
+    path('publisher/<int:pk>/', views.PublisherDetailView.as_view(), name='publisher_detail'),
+    path('store/', views.StoreListView.as_view(), name='store_list'),
+    path('store/<int:pk>/', views.StoreDetailView.as_view(), name='store_detail')
 ]

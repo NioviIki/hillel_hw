@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for book in object_list %}
+    <p><a href="{% url 'new_hw:book_detail' book.id%}"> {{ book.name }}</a></p>
+{% endfor %}
+
+{#{% for book in book_list %}#}
+{#        <h4><a href="{% url 'new_hw:detail' book.id %}">{{ book.name }}</a></h4>#}
+{#        <ul>{% for i in book.authors.all %} <a href="{% url 'new_hw:author_detail'  i.id %}">   {{ i }}  {% endfor %} </a></ul>#}
+{##}
+
+
+</body>
+</html>
