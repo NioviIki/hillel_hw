@@ -8,7 +8,7 @@ class TForm(forms.Form):
     subject = forms.CharField(max_length=20, label='Subject')
     message = forms.CharField(max_length=200, label='Message', widget=forms.Textarea)
     email = forms.EmailField(label='Email')
-    time1 = forms.DateTimeField(label='Time', input_formats=['%d-%m-%Y %H:%M'])
+    time1 = forms.DateTimeField(label='Time', input_formats=['%d-%m-%Y %H:%M'], initial=timezone.now())
 
     def send_massages(self):
         now = self.cleaned_data['time1'] - timezone.now()
