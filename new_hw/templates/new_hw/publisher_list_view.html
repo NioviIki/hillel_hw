@@ -7,6 +7,9 @@
 <body>
 {% for publisher in publisher_list %}
     <p><a href="{% url 'new_hw:publisher_detail' publisher.id %}"> {{ publisher.name }}</a></p>
+    {% for book in publisher.book_set.all %}
+    <p>{{ book }}</p>
+    {% endfor %}
 {% endfor %}
 </body>
 </html>
