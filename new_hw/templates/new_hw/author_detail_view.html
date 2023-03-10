@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <a href="{% url 'new_hw:author_list' %}"> Back </a>
 </head>
 <body>
-
     <p>{{ author.name }} {{ author.age }} years </p>
     {% for i in  author.book_set.all%}
         <p>{{ i.name }}</p>
