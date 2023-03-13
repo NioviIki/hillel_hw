@@ -8,10 +8,10 @@ from django.core.mail import send_mail
 
 
 @shared_task()
-def send_massage(subject, message, now, recipient_list,
+def send_massage(subject, message, recipient_list=settings.EMAIL_HOST_USER,
                  from_email=settings.EMAIL_HOST_USER):
 
-    time.sleep(now)
+
 
     send_mail(subject=subject,
               message=message,
