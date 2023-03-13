@@ -19,7 +19,6 @@ class TForm(forms.Form):
             raise ValueError
         else:
             send_massage.apply_async(args=[self.cleaned_data['subject'],
-                               self.cleaned_data['message'],
-                               self.cleaned_data['email']],
+                                     self.cleaned_data['message'],
+                                     self.cleaned_data['email']],
                                      eta=self.cleaned_data['time1'])
-
